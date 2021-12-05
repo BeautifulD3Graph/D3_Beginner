@@ -12,7 +12,7 @@ SVG elements!
 ![image](https://user-images.githubusercontent.com/45458274/144730307-bf5b9a43-9687-4484-8494-1c2ebcaa513e.png)
 
 
-exercise time!  
+Exercise time!  
 ![image](https://user-images.githubusercontent.com/45458274/144718872-6f3404f2-bad4-417d-a203-0414240f9ec9.png)
 ![image](https://user-images.githubusercontent.com/45458274/144718985-f3f13ec6-08c5-43c1-96f1-c0f26d517819.png)
 ![image](https://user-images.githubusercontent.com/45458274/144718992-3633376d-b1af-40dc-9f9d-bd2ff70e1d9b.png)  
@@ -20,7 +20,7 @@ exercise time!
 
 ## D3 
 
-### 1. Element Selections module
+### 1. Element selections module
 
 Let's learn about
 ```javascript
@@ -32,7 +32,7 @@ d3.select() and d3.selectAll().
 result.  
 ![image](https://user-images.githubusercontent.com/45458274/144730657-97302ac1-ce56-44e0-a077-72951496f6f2.png)  
 
-### 2. Data Binding
+### 2. Data binding
 
 Let's learn about
 ```javascript 
@@ -55,36 +55,36 @@ const svg = d3.select(el)
 ```
 
 
-#### (1) select & datum
+#### (1) Select & datum
 ```javascript
 return svg.select('rect').datum(barData)
 ```  
 ![image](https://user-images.githubusercontent.com/45458274/144730886-b6deeb43-bef0-42eb-9526-6e6d9ca05a42.png)
 
 
-#### (2) selectAll & datum
+#### (2) SelectAll & datum
 ```javascript
 return svg.selectAll('rect').datum(barData)
 ```  
 ![image](https://user-images.githubusercontent.com/45458274/144730901-6ddddfae-f3c9-43d7-8164-66c277e5560e.png)
 
-#### (3) selectAll & data
+#### (3) SelectAll & data
 ```javascript
 return svg.selectAll('rect').data(barData)
 ```  
 ![image](https://user-images.githubusercontent.com/45458274/144730918-3ea05e55-1f3f-4bf3-8b2e-36dd58b58d12.png)   
 
-#### summary
+#### Summary
 ![image](https://user-images.githubusercontent.com/45458274/144731085-a127ed89-eaf9-4590-a044-9af9edba624d.png)
 
 
-### 3. Document Styling
+### 3. Document styling
 Let's learn about
 ```javascript 
   selection.attr() and selection.style()
 ```
 
-#### (1) Draw Bar Chart
+#### (1) Draw BarChart
 setting  
 ```javascript
  const barData = [45, 67, 96, 84, 41]
@@ -119,11 +119,11 @@ setting
   return svg
 ```
 
-result   
+Result   
 ![image](https://user-images.githubusercontent.com/45458274/144745726-71e42a1d-57a1-4498-a541-78d92d0a547b.png)
 
 
-#### misson!
+#### Misson!
 ![image](https://user-images.githubusercontent.com/45458274/144745893-4ae8efa2-7b2b-4ed8-8e25-07f97ea3cfac.png)
 
 <details>
@@ -146,10 +146,10 @@ result
    </div>
 </details>
 
-#### summary
+#### Summary
 ![image](https://user-images.githubusercontent.com/45458274/144746208-194f6d2c-2326-4e46-8793-bc3eb65be020.png)
 
-#### (2) exercise time!
+#### (2) Exercise time!
 
 ![image](https://user-images.githubusercontent.com/45458274/144746607-3e57ec97-5414-41a9-b69f-bbdb054a0579.png)
 
@@ -187,12 +187,24 @@ d3.select(svg).selectAll('rect')
 ![image](https://user-images.githubusercontent.com/45458274/144747469-ae4be610-13f6-4562-860c-e34e28e046c0.png)  
 어떻게 rect 태그를 selectAll() 메서드로 바인딩 할 수 있었을까?  
 
-#### (1) Data Binding
+#### (1)  Bound data into virtual object(_enter)  
 엘리먼트가 존재하지 않지만 바인딩을 할 수 있었던 이유는 enter() 메서드 덕분이다.
 > enter() 메서드는 selection에 바인드된 데이터들 중에 아직 실제 문서 요소를 가지지 못 하는 것들을 찾아내서 가상의 객체로 만들어 반환해줍니다.
 
+![image](https://user-images.githubusercontent.com/45458274/144747965-710c5b4f-bf8e-48e6-a811-22787ababef0.png)
+
+_enter안에 가상의 객체가 만들어진 것을 볼 수 있다.   
+![image](https://user-images.githubusercontent.com/45458274/144748001-726ee3fa-d603-49b2-956e-62399d1bb8e1.png)    
+
+![image](https://user-images.githubusercontent.com/45458274/144748110-68e8d241-b10b-4922-9103-5c3a5fa7531d.png)    
+ 
+그리고 enter()는 아래와 같이 반환한다   
+![image](https://user-images.githubusercontent.com/45458274/144748153-9745e637-7d2a-47df-a446-1edbfce71820.png)     
 
 
+#### (2)  Append real object
+그 후에 append() 메서드로 실제 Object를 생성해준다.   
+![image](https://user-images.githubusercontent.com/45458274/144748249-b9c3e022-2725-4515-9a84-84cfd208d6fe.png)     
 
 Source.
 1. https://observablehq.com/@sxywu/introduction-to-svg-and-d3-js
