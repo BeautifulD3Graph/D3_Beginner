@@ -206,5 +206,11 @@ _enter안에 가상의 객체가 만들어진 것을 볼 수 있다.
 그 후에 append() 메서드로 실제 Object를 생성해준다.   
 ![image](https://user-images.githubusercontent.com/45458274/144748249-b9c3e022-2725-4515-9a84-84cfd208d6fe.png)     
 
+
+#### (3)  Exercise time!
+![image](https://user-images.githubusercontent.com/45458274/144749174-a4c0fcd4-6c1e-4e3e-8d19-54ead2bca173.png)
+
+
+
 Source.
 1. https://observablehq.com/@sxywu/introduction-to-svg-and-d3-js
