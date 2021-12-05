@@ -21,6 +21,7 @@ exercise time!
 ## D3 
 
 ### 1. Element Selections module
+
 Let's learn about
 ```javascript
 d3.select() and d3.selectAll().  
@@ -33,7 +34,7 @@ result.
 
 ### 2. Data Binding
 
-Let's learn about:
+Let's learn about
 ```javascript 
 selection.datum() and selection.data(). 
 ```
@@ -76,6 +77,43 @@ return svg.selectAll('rect').data(barData)
 #### summary
 ![image](https://user-images.githubusercontent.com/45458274/144731085-a127ed89-eaf9-4590-a044-9af9edba624d.png)
 
+
+### Document Styling
+Let's learn about
+```javascript 
+  selection.attr() and selection.style()
+```
+setting  
+```javascript
+ const barData = [45, 67, 96, 84, 41]
+ const svg = html`
+    <svg width=${rectWidth * barData.length} height=100 style='border: 1px dashed'>
+      <rect />
+      <rect />
+      <rect />
+      <rect />
+      <rect />
+    </rect>
+  `
+  // console.log(barData)
+  d3.select(svg).selectAll('rect')
+    .data(barData)
+    // calculate x-position based on its index(x축 시작지점 설정)
+    .attr('x', (d, i) => i * rectWidth)
+    .attr('y', (d,i) => 100 - d)
+    // set height based on the bound datum(높이 설정)
+    .attr('height', d => d)
+    // rest of attributes are constant values(넓이 설정)
+    .attr('width', rectWidth)
+    //테두리 두께 설정
+    .attr('stroke-width', 2)
+    //
+    .attr('stroke-dasharray', '5 5')
+    .attr('stroke', 'black')
+    .attr('fill', 'skyblue')
+  
+  return svg
+```
 
 
 resources
