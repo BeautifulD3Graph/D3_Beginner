@@ -83,6 +83,8 @@ Let's learn about
 ```javascript 
   selection.attr() and selection.style()
 ```
+
+#### (1) Draw Bar Chart
 setting  
 ```javascript
  const barData = [45, 67, 96, 84, 41]
@@ -144,6 +146,33 @@ result
    </div>
 </details>
 
+#### summary
+![image](https://user-images.githubusercontent.com/45458274/144746208-194f6d2c-2326-4e46-8793-bc3eb65be020.png)
+
+#### (2) exercise time!
+
+![image](https://user-images.githubusercontent.com/45458274/144746607-3e57ec97-5414-41a9-b69f-bbdb054a0579.png)
+
+code
+```javascript
+const svg = html`
+    <svg width=500 height=100 style='border: 1px dashed'>
+      <path d='${petalPath}' transform='translate(50, 0)' />
+      <path d='${petalPath}' transform='translate(150, 0)' />
+      <path d='${petalPath}' transform='translate(250, 0)' />
+      <path d='${petalPath}' transform='translate(350, 0)' />
+      <path d='${petalPath}' transform='translate(450, 0)' />
+    </svg>
+  `
+  
+  // YOUR CODE HERE 
+  const path = d3.select(svg).selectAll('path').data(movies)
+    .attr('fill',d => colors[d.genres[0]] || colors.Other)
+  // .attr('fill',d => console.log(d)) 콘솔을 통해 어떤 데이터가 들어갔는지 확인하자
+  // console.log(path) 콘솔을 통해 어떤 데이터가 들어갔는지 확인하자
+ 
+  return svg
+```
 
 resources
 1. https://observablehq.com/@sxywu/introduction-to-svg-and-d3-js
