@@ -5,7 +5,9 @@ SVG viewport & Coordinate system
 
 
 SVG elements!  
-![image](https://user-images.githubusercontent.com/45458274/144718175-48073fcf-d7a6-43cb-b204-282f4677c3ef.png)
+![image](https://user-images.githubusercontent.com/45458274/144718175-48073fcf-d7a6-43cb-b204-282f4677c3ef.png)  
+![image](https://user-images.githubusercontent.com/45458274/144730312-d28f6479-b711-48e3-b25d-d4c3cc975884.png)  
+![image](https://user-images.githubusercontent.com/45458274/144730307-bf5b9a43-9687-4484-8494-1c2ebcaa513e.png)
 
 
 exercise time!  
