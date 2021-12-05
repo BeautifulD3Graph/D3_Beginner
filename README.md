@@ -78,7 +78,7 @@ return svg.selectAll('rect').data(barData)
 ![image](https://user-images.githubusercontent.com/45458274/144731085-a127ed89-eaf9-4590-a044-9af9edba624d.png)
 
 
-### Document Styling
+### 3. Document Styling
 Let's learn about
 ```javascript 
   selection.attr() and selection.style()
@@ -116,6 +116,8 @@ setting
   
   return svg
 ```
+
+result   
 
 
 resources
