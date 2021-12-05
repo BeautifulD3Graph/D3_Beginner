@@ -180,9 +180,18 @@ Let's learn about
 d3.select(svg).selectAll('rect')
   .data(data).enter().append('rect')
 ```
-<img width="727" alt="스크린샷 2021-12-05 오후 9 58 18" src="https://user-images.githubusercontent.com/45458274/144747620-555de087-7589-4be1-bf08-244ca3b57aff.png"> 
- 
+<img width="727" alt="스크린샷 2021-12-05 오후 9 58 18" src="https://user-images.githubusercontent.com/45458274/144747620-555de087-7589-4be1-bf08-244ca3b57aff.png">  
+
+``` <rect/>```  태그가 없음에도 BarChart가 정상적으로 그려진 것을 볼 수 있다!
+
 ![image](https://user-images.githubusercontent.com/45458274/144747469-ae4be610-13f6-4562-860c-e34e28e046c0.png)  
+어떻게 rect 태그를 selectAll() 메서드로 바인딩 할 수 있었을까?  
+
+#### (1) Data Binding
+엘리먼트가 존재하지 않지만 바인딩을 할 수 있었던 이유는 enter() 메서드 덕분이다.
+> enter() 메서드는 selection에 바인드된 데이터들 중에 아직 실제 문서 요소를 가지지 못 하는 것들을 찾아내서 가상의 객체로 만들어 반환해줍니다.
+
+
 
 
 Source.
