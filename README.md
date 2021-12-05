@@ -121,6 +121,30 @@ result
 ![image](https://user-images.githubusercontent.com/45458274/144745726-71e42a1d-57a1-4498-a541-78d92d0a547b.png)
 
 
+#### misson!
+![image](https://user-images.githubusercontent.com/45458274/144745893-4ae8efa2-7b2b-4ed8-8e25-07f97ea3cfac.png)
+
+<details>
+  <summary>Answer</summary>
+    <div markdown="1">
+     
+     d3.select(svg).selectAll('rect')  
+    .data(barData)  
+    // calculate x-position based on its index   
+    .attr('x', (d, i) => i * rectWidth)   
+    .attr('y', (d,i) => 100 - d)    //add   
+    // set height based on the bound datum   
+    .attr('height', d => d)     
+    // rest of attributes are constant values   
+    .attr('width', rectWidth)   
+    .attr('stroke-width', 2)    
+    .attr('stroke', 'red')        //modified  
+    .attr('fill', 'skyblue')      //modified   
+     
+   </div>
+</details>
+
+
 resources
 1. https://observablehq.com/@sxywu/introduction-to-svg-and-d3-js
 2. https://bl.ocks.org/
