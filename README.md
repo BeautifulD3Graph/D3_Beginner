@@ -174,5 +174,16 @@ const svg = html`
   return svg
 ```
 
+### 4. Approaching the DOM.
+Let's learn about
+```javascript
+d3.select(svg).selectAll('rect')
+  .data(data).enter().append('rect')
+```
+<img width="727" alt="스크린샷 2021-12-05 오후 9 58 18" src="https://user-images.githubusercontent.com/45458274/144747620-555de087-7589-4be1-bf08-244ca3b57aff.png"> 
+ 
+![image](https://user-images.githubusercontent.com/45458274/144747469-ae4be610-13f6-4562-860c-e34e28e046c0.png)  
+
+
 Source.
 1. https://observablehq.com/@sxywu/introduction-to-svg-and-d3-js
