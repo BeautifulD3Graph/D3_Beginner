@@ -214,3 +214,4 @@ _enter안에 가상의 객체가 만들어진 것을 볼 수 있다.
 
 Source.
 1. https://observablehq.com/@sxywu/introduction-to-svg-and-d3-js
+2. https://observablehq.com/@sxywu/2-select-existing-petal-s-and-bind-movie-data
