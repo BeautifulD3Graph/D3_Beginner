@@ -174,5 +174,5 @@ const svg = html`
   return svg
 ```
 
-resources
+Source.
 1. https://observablehq.com/@sxywu/introduction-to-svg-and-d3-js
