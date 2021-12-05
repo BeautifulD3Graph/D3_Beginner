@@ -11,7 +11,9 @@ SVG elements!
 exercise time!  
 ![image](https://user-images.githubusercontent.com/45458274/144718872-6f3404f2-bad4-417d-a203-0414240f9ec9.png)
 ![image](https://user-images.githubusercontent.com/45458274/144718985-f3f13ec6-08c5-43c1-96f1-c0f26d517819.png)
-![image](https://user-images.githubusercontent.com/45458274/144718992-3633376d-b1af-40dc-9f9d-bd2ff70e1d9b.png)
+![image](https://user-images.githubusercontent.com/45458274/144718992-3633376d-b1af-40dc-9f9d-bd2ff70e1d9b.png)  
+![image](https://user-images.githubusercontent.com/45458274/144730084-28dcb100-1bf6-4051-afa4-d2c76a2e0576.png)
+
 
 
 
