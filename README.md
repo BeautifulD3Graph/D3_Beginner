@@ -107,9 +107,11 @@ setting
     .attr('width', rectWidth)
     //테두리 두께 설정
     .attr('stroke-width', 2)
-    //
+    //테두리 유형 길이, 사이 넓이 설정
     .attr('stroke-dasharray', '5 5')
+    //테두리 색상 설정
     .attr('stroke', 'black')
+    //차트 색 채우기(background color)느낌
     .attr('fill', 'skyblue')
   
   return svg
